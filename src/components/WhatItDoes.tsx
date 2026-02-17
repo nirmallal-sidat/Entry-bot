@@ -1,6 +1,6 @@
 "use client";
 
-import { Wand2, BarChart3, LineChart, Share2, Sparkles, ArrowLeftRight, ArrowUpRight, ArrowRight } from "lucide-react";
+import { Wand2, BarChart3, LineChart, Network, Sparkles, ArrowLeftRight, ArrowUpRight, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const WhatItDoes = () => {
@@ -21,7 +21,7 @@ const WhatItDoes = () => {
       description: "Automates revenue workflows and keeps revenue reporting accurate.",
     },
     {
-      icon: <Share2 size={24} className="text-black" />,
+      icon: <Network size={24} className="text-black" />,
       title: "Native integrations",
       description: "Tools like Stripe, Mercury, Ramp, Brex, Deel, and Gusto keep data real-time",
     },

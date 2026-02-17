@@ -17,13 +17,13 @@ const geistMono = Geist_Mono({
 const nunito = Nunito({
   variable: "--font-nunito",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["300", "400", "500", "700", "900"],
 });
 
 export const metadata: Metadata = {
@@ -43,7 +43,7 @@ export default function RootLayout({
       >
         <div className="flex min-h-screen flex-col bg-white">
           <Navbar />
-          <main className="flex-grow">
+          <main className="grow">
             {children}
           </main>
           <Footer />

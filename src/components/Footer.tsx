@@ -103,8 +103,8 @@ const Footer = () => {
         <div className="py-12 border-t border-zinc-200 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-zinc-400 text-[14px] font-bold">Copyright © Entrybot 2026</p>
           <div className="flex gap-8">
-            <Link href="#" className="text-zinc-400 text-[14px] font-bold hover:text-black transition-colors">New privacy policy</Link>
-            <Link href="#" className="text-zinc-400 text-[14px] font-bold hover:text-black transition-colors">Terms and conditions</Link>
+            <Link href="/privacy" className="text-zinc-400 text-[14px] font-bold hover:text-black transition-colors">New privacy policy</Link>
+            <Link href="/terms" className="text-zinc-400 text-[14px] font-bold hover:text-black transition-colors">Terms and conditions</Link>
           </div>
         </div>
       </div>

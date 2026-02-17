@@ -73,7 +73,7 @@ const TimeBackSection = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {cards.map((card, index) => (
-          <div key={index} className="bg-[#FFE500] p-6 rounded-2xl flex flex-col h-[400px] relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+          <div key={index} className="bg-[#FFE500] p-6 rounded-2xl flex flex-col h-[500px] relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
             <h4 className="text-[18px] font-bold text-black mb-2 leading-tight font-nunito">{card.title}</h4>
             <p className="text-[14px] text-black mb-6 font-nunito">{card.description}</p>
             

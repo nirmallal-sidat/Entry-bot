@@ -8,25 +8,25 @@ const Hero = () => {
   return (
     <section className="relative  justify-center flex items-center pt-4 overflow-hidden font-nunito bg-white">
       {/* Social Icons - Left Side */}
-      <div className="fixed left-10 bottom-10 flex flex-col gap-6 z-50 hidden lg:flex">
+      <div className="fixed left-10 bottom-10 flex-col gap-8 z-50 hidden lg:flex">
         <Link href="#" className="text-black hover:text-black hover:scale-110 transition-all duration-300">
-          <Twitter size={20} />
+          <Twitter size={24} />
         </Link>
         <Link href="#" className="text-black hover:text-black hover:scale-110 transition-all duration-300">
-          <Facebook size={20} />
+          <Facebook size={24} />
         </Link>
         <Link href="#" className="text-black hover:text-black hover:scale-110 transition-all duration-300">
-          <Instagram size={20} />
+          <Instagram size={24} />
         </Link>
         <Link href="#" className="text-black hover:text-black hover:scale-110 transition-all duration-300">
-          <Linkedin size={20} />
+          <Linkedin size={24} />
         </Link>
       </div>
 
       <div className="max-w-[1900px] mx-auto px-4 lg:px-20 w-full flex flex-col lg:flex-row items-start justify-between ">
         {/* Text Content */}
         <div className="flex-1 z-10 text-center lg:text-left pt-32">
-          <h1 className="text-[64px] lg:text-[100px] font-bold text-black leading-[1] mb-6 tracking-tight">
+          <h1 className="text-[64px] lg:text-[100px] font-bold text-black leading-none mb-6 tracking-tight">
             Entrybot
           </h1>
           <p className="text-[18px] text-black max-w-lg mb-12 leading-relaxed font-medium">

@@ -61,12 +61,12 @@ const ScaleFasterSection = () => {
         </div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-4 mb-16">
           {tabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 py-1.5 rounded-full text-[16px] font-medium transition-all duration-300 ${
+              className={`px-5 py-2 rounded-full text-[16px] font-medium transition-all duration-300 ${
                 activeTab === tab
                   ? "bg-black text-white"
                   : "text-black hover:bg-black/5"
@@ -82,36 +82,42 @@ const ScaleFasterSection = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className={`${card.bgColor} p-10 rounded-3xl min-h-[400px] flex flex-col justify-between shadow-sm`}
+              className={`relative ${card.bgColor} p-10 rounded-sm min-h-[440px] flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow duration-300`}
             >
-              <div>
-                <h3 className="text-[22px] font-bold text-black mb-4">
+              <div className="relative z-10">
+                <h3 className="text-[24px] font-bold text-black mb-4 tracking-tight">
                   {card.title}
                 </h3>
-                <p className="text-[16px] text-black leading-relaxed font-medium">
+                <p className="text-[17px] text-zinc-700 leading-relaxed font-medium">
                   {card.description}
                 </p>
               </div>
-              <div className="mt-12">
+              <div className="mt-auto">
                 <div className={card.logoType}>
                     {card.logo === "Cactus" && (
-                        <div className="flex items-center gap-2">
-                            <span className="w-8 h-8 bg-black text-white flex items-center justify-center rounded text-sm tracking-tighter font-bold">C</span>
-                            <span>Cactus</span>
+                        <div className="flex items-center gap-3">
+                            <div className="w-11 h-11 bg-black rounded-xl flex items-center justify-center p-2.5">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 3V21M12 11H7V8M12 14H17V11" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                            </div>
+                            <span className="text-2xl font-bold tracking-tight">Cactus</span>
                         </div>
                     )}
                     {card.logo === "REGIMEN" && (
-                        <div className="flex flex-col leading-none">
-                            <span className="font-black text-3xl">REGIMEN</span>
-                            <span className="text-[8px] tracking-[0.2em] font-medium">MAXIMIZE YOUR POTENTIAL</span>
+                        <div className="flex flex-col leading-tight">
+                            <span className="font-extrabold text-3xl tracking-tighter">REGIMEN</span>
+                            <span className="text-[9px] tracking-[0.3em] font-bold text-zinc-500">MAXIMIZE YOUR POTENTIAL</span>
                         </div>
                     )}
                     {card.logo === "Hyperspell" && (
-                        <div className="flex items-center gap-2">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-black">
-                                <path d="M12 2L2 19.5H22L12 2ZM12 6L18.5 17.5H5.5L12 6Z" fill="currentColor"/>
-                            </svg>
-                            <span className="font-semibold text-2xl">Hyperspell</span>
+                        <div className="flex items-center gap-3">
+                            <div className="flex flex-col gap-1.5">
+                                <div className="w-6 h-[3px] bg-black"></div>
+                                <div className="w-10 h-[3px] bg-black"></div>
+                                <div className="w-12 h-[3px] bg-black"></div>
+                            </div>
+                            <span className="font-bold text-2xl tracking-tight">Hyperspell</span>
                         </div>
                     )}
                 </div>
