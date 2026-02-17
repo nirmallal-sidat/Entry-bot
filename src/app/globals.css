@@ -12,6 +12,7 @@
   --font-mono: var(--font-geist-mono);
   --font-nunito: var(--font-nunito);
   --font-roboto: var(--font-roboto);
+  --font-inter: var(--font-inter);
 }
 
 @media (prefers-color-scheme: dark) {

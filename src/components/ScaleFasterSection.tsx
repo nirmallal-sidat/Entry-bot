@@ -88,7 +88,7 @@ const ScaleFasterSection = () => {
                 <h3 className="text-[24px] font-bold text-black mb-4 tracking-tight">
                   {card.title}
                 </h3>
-                <p className="text-[17px] text-zinc-700 leading-relaxed font-medium">
+                <p className="text-[11px] text-zinc-700 leading-relaxed font-inter font-normal">
                   {card.description}
                 </p>
               </div>

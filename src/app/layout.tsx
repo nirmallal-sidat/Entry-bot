@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Nunito, Roboto } from "next/font/google";
+import { Geist, Geist_Mono, Nunito, Roboto, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -26,6 +26,12 @@ const roboto = Roboto({
   weight: ["300", "400", "500", "700", "900"],
 });
 
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
 export const metadata: Metadata = {
   title: "Entrybot - Modern Accounting Platform",
   description: "Automated bookkeeping tasks and daily insights that amplify your financial clarity.",
@@ -39,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${nunito.variable} ${roboto.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${nunito.variable} ${roboto.variable} ${inter.variable} antialiased`}
       >
         <div className="flex min-h-screen flex-col bg-white">
           <Navbar />

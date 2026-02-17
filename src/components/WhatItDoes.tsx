@@ -59,7 +59,7 @@ const WhatItDoes = () => {
               <h3 className="text-[20px] font-bold text-black mb-3">
                 {feature.title}
               </h3>
-              <p className="text-[15px] text-black leading-relaxed font-medium">
+              <p className="text-[11px] text-black leading-relaxed font-inter font-normal">
                 {feature.description}
               </p>
               

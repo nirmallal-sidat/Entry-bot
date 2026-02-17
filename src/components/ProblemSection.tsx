@@ -8,15 +8,15 @@ const ProblemSection = () => {
   const problems = [
     {
       icon: <Image src="/Background.png" alt="Icon 1" width={48} height={48} />,
-      text: "Manual categorization, reconciliations, and cleanup steal hours every week.",
+      text: "Drowning in document processing by typing data",
     },
     {
       icon: <Image src="/Container.png" alt="Icon 2" width={48} height={48} />,
-      text: "Numbers arrive weeks late, so decisions get made with guesswork.",
+      text: "Manual entry leads to costly mistakes that damage client relationships",
     },
     {
       icon: <Image src="/Background (1).png" alt="Icon 3" width={48} height={48} />,
-      text: "Disconnected tools, spreadsheets and broken automations create more work instead of less.",
+      text: "Juggling multiple tools, email attachments, and spreadsheets creates bottlenecks",
     },
   ];
 
@@ -26,7 +26,7 @@ const ProblemSection = () => {
         {/* Label and Heading */}
         <p className="text-[20px] font-bold text-black mb-4 font-roboto">The Problem</p>
         <h2 className="text-[40px] md:text-[56px] font-bold text-black mb-16 leading-tight font-roboto">
-          QuickBooks is slowing your business down.
+          Your team deserves better than manual data entry
         </h2>
 
         {/* Problems Grid */}
@@ -49,7 +49,7 @@ const ProblemSection = () => {
             href="#" 
             className="inline-flex items-center gap-2 bg-[#0a0a0a] text-white px-8 py-4 rounded-xl hover:bg-zinc-800 transition-colors text-[16px] font-medium"
           >
-            Explore how Entrybot is a modern Quickbooks alternative
+            Discover Our Solution
             <ArrowRight size={18} />
           </Link>
         </div>

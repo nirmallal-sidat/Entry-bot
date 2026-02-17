@@ -8,18 +8,18 @@ const Hero = () => {
   return (
     <section className="relative  justify-center flex items-center pt-4 overflow-hidden font-nunito bg-white">
       {/* Social Icons - Left Side */}
-      <div className="fixed left-10 bottom-10 flex-col gap-8 z-50 hidden lg:flex">
-        <Link href="#" className="text-black hover:text-black hover:scale-110 transition-all duration-300">
-          <Twitter size={24} />
+      <div className="fixed left-10 bottom-10 hidden lg:flex flex-col gap-10 z-50">
+        <Link href="#" className="text-black hover:text-zinc-600 hover:scale-110 transition-all duration-300">
+          <Twitter size={32} />
         </Link>
-        <Link href="#" className="text-black hover:text-black hover:scale-110 transition-all duration-300">
-          <Facebook size={24} />
+        <Link href="#" className="text-black hover:text-zinc-600 hover:scale-110 transition-all duration-300">
+          <Facebook size={32} />
         </Link>
-        <Link href="#" className="text-black hover:text-black hover:scale-110 transition-all duration-300">
-          <Instagram size={24} />
+        <Link href="#" className="text-black hover:text-zinc-600 hover:scale-110 transition-all duration-300">
+          <Instagram size={32} />
         </Link>
-        <Link href="#" className="text-black hover:text-black hover:scale-110 transition-all duration-300">
-          <Linkedin size={24} />
+        <Link href="#" className="text-black hover:text-zinc-600 hover:scale-110 transition-all duration-300">
+          <Linkedin size={32} />
         </Link>
       </div>
 
@@ -27,14 +27,14 @@ const Hero = () => {
         {/* Text Content */}
         <div className="flex-1 z-10 text-center lg:text-left pt-32">
           <h1 className="text-[64px] lg:text-[100px] font-bold text-black leading-none mb-6 tracking-tight">
-            Entrybot
+                Transform Documents into Data, Instantly
           </h1>
           <p className="text-[18px] text-black max-w-lg mb-12 leading-relaxed font-medium">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa sem enim tellus vel molestie donec quis. Est maecenas ultrices magna nibh mi habitasse elementum nisi.
+            Entrybot uses intelligent OCR and AI vision to extract, process, and manage data from any document type - invoices, receipts, bank statements, or scanned files.
           </p>
           
           <Link href="#" className="inline-flex items-center group">
-            <span className="text-[18px] font-medium text-black mr-3">More</span>
+            <span className="text-[18px] font-medium text-black mr-3">Start Free Trial</span>
             <div className="relative w-[80px] h-[40px] group-hover:translate-x-3 transition-transform duration-300">
               <Image 
                 src="/Arrowdesign.png" 

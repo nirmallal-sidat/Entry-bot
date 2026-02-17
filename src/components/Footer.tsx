@@ -15,14 +15,14 @@ const Footer = () => {
               Automated bookkeeping tasks and daily insights that amplify your financial clarity.
             </p>
             <div className="flex gap-4">
-              <Link href="#" className="w-10 h-10 bg-black text-white rounded flex items-center justify-center hover:bg-zinc-800 transition-colors">
-                <Twitter size={18} />
+              <Link href="#" className="w-12 h-12 bg-black text-white rounded flex items-center justify-center hover:bg-zinc-800 transition-all hover:scale-110">
+                <Twitter size={22} />
               </Link>
-              <Link href="#" className="w-10 h-10 bg-black text-white rounded flex items-center justify-center hover:bg-zinc-800 transition-colors">
-                <Youtube size={18} />
+              <Link href="#" className="w-12 h-12 bg-black text-white rounded flex items-center justify-center hover:bg-zinc-800 transition-all hover:scale-110">
+                <Youtube size={22} />
               </Link>
-              <Link href="#" className="w-10 h-10 bg-black text-white rounded flex items-center justify-center hover:bg-zinc-800 transition-colors">
-                <Linkedin size={18} />
+              <Link href="#" className="w-12 h-12 bg-black text-white rounded flex items-center justify-center hover:bg-zinc-800 transition-all hover:scale-110">
+                <Linkedin size={22} />
               </Link>
             </div>
           </div>
