@@ -35,7 +35,7 @@ const FAQSection = () => {
   return (
     <section className="py-24 px-4 bg-white font-nunito">
       <div className="max-w-[1900px] mx-auto lg:px-20">
-        <h2 className="text-[40px] md:text-[56px] font-bold text-black text-center mb-10 leading-tight">
+        <h2 className="text-[40px] md:text-[56px] font-bold text-black text-center mb-10 leading-[100%] font-nunito">
           FAQs
         </h2>
 
@@ -82,7 +82,7 @@ const FAQSection = () => {
                 onClick={() => toggleFAQ(index)}
                 className="py-8 flex items-center justify-between group cursor-pointer hover:bg-zinc-50/50 px-4"
               >
-                <h3 className="text-[18px] md:text-[20px] font-bold text-black transition-transform duration-300">
+                <h3 className="text-[18px] md:text-[20px] font-medium text-black transition-transform duration-300 font-roboto leading-[100%]">
                   {question}
                 </h3>
                 <ChevronRight 
@@ -99,7 +99,7 @@ const FAQSection = () => {
               <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
                 activeIndex === index ? "max-h-[500px] pb-8 opacity-100" : "max-h-0 opacity-0"
               }`}>
-                <div className="px-4 text-[16px] text-black leading-relaxed max-w-4xl">
+                <div className="px-4 text-[18px] text-black leading-[100%] max-w-4xl font-roboto font-normal">
                   Entrybot is designed to automate the heavy lifting of accounting using advanced AI. 
                   It seamlessly handles categorization, reconciliations, and real-time reporting, 
                   allowing you to focus on growing your business while maintaining 100% financial accuracy.

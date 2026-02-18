@@ -67,24 +67,26 @@ const TimeBackSection = () => {
 
   const CardRow = ({ title, cards }: { title: string, cards: typeof startupsCards }) => (
     <div className="mb-16">
-      <div className="flex justify-between items-end mb-8 border-b border-black/10 pb-4">
-        <h3 className="text-[24px] font-bold text-black font-nunito">{title}</h3>
+      <div className="flex justify-between items-end mb-12">
+        <h3 className="text-[30px] font-bold text-black font-nunito leading-[100%]">{title}</h3>
         <MoreButton />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[40px]">
         {cards.map((card, index) => (
-          <div key={index} className="bg-[#FFE500] p-6 rounded-2xl flex flex-col h-[500px] relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
-            <h4 className="text-[18px] font-bold text-black mb-2 leading-tight font-nunito">{card.title}</h4>
-            <p className="text-[11px] text-black mb-6 font-inter font-normal">{card.description}</p>
+          <div key={index} className="bg-[#FFE500] pt-8 px-8 pb-0 rounded-[20px] flex flex-col w-full max-w-[348px] h-[428.5px] relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+            <h4 className="text-[20px] font-medium text-black mb-2 leading-[100%] font-roboto">{card.title}</h4>
+            <p className="text-[18px] text-black mb-6 font-roboto font-normal leading-[100%]">{card.description}</p>
             
             {/* Mockup/Image Placeholder Area */}
-            <div className="mt-auto bg-white rounded-t-xl w-full h-[200px] relative shadow-sm overflow-hidden">
-                <Image 
-                  src={card.image} 
-                  alt={card.title} 
-                  fill 
-                  className="object-contain object-bottom p-2"
-                />
+            <div className="mt-auto bg-white rounded-t-2xl w-full h-[250px] relative shadow-lg overflow-hidden translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                <div className="relative w-full h-full p-4">
+                  <Image 
+                    src={card.image} 
+                    alt={card.title} 
+                    fill 
+                    className="object-contain object-bottom p-4"
+                  />
+                </div>
             </div>
           </div>
         ))}
@@ -93,9 +95,9 @@ const TimeBackSection = () => {
   );
 
   return (
-    <section className=" px-4 bg-white font-nunito">
+    <section className="py-24 px-4 bg-[#F4F4F4] font-nunito">
       <div className="max-w-[1900px] mx-auto lg:px-20">
-        <h2 className="text-[40px] md:text-[56px] font-bold text-black text-center mb-20 leading-tight">
+        <h2 className="text-[40px] md:text-[56px] font-bold text-black text-center mb-20 leading-[100%] font-nunito">
          Smart automation for every business size
         </h2>
 

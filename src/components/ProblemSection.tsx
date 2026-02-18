@@ -25,18 +25,18 @@ const ProblemSection = () => {
       <div className="max-w-7xl mx-auto text-center">
         {/* Label and Heading */}
         <p className="text-[20px] font-bold text-black mb-4 font-roboto">The Problem</p>
-        <h2 className="text-[40px] md:text-[56px] font-bold text-black mb-16 leading-tight font-roboto">
+        <h2 className="text-[40px] md:text-[56px] font-bold text-black mb-16 leading-[100%] font-nunito">
           Your team deserves better than manual data entry
         </h2>
 
         {/* Problems Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[40px] mb-16">
           {problems.map((problem, index) => (
             <div key={index} className="flex flex-col items-center">
-              <div className="mb-6">
+              <div className="mb-8">
                 {problem.icon}
               </div>
-              <p className="text-[18px] text-black leading-relaxed max-w-[300px]">
+              <p className="text-[18px] font-normal text-black leading-[100%] font-roboto text-center max-w-[300px]">
                 {problem.text}
               </p>
             </div>

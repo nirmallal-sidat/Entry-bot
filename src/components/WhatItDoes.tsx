@@ -40,10 +40,10 @@ const WhatItDoes = () => {
   return (
     <section className="py-24 px-4 bg-white font-nunito">
       <div className="max-w-[1900px] mx-auto lg:px-20 text-center">
-        <h2 className="text-[40px] md:text-[56px] font-bold text-black mb-6 leading-tight">
+        <h2 className="text-[40px] md:text-[56px] font-bold text-black mb-6 leading-[100%] font-nunito">
           What Entrybot does
         </h2>
-        <p className="text-[16px] md:text-[18px] text-black max-w-3xl mx-auto mb-20 font-medium">
+        <p className="text-[18px] text-black max-w-3xl mx-auto mb-20 font-normal font-roboto leading-[100%] text-center">
           Entrybot uses AI to support startups, SMBs and their accounting firms, by automating the busywork—so humans can focus on accuracy, insight and growth.
         </p>
 
@@ -56,10 +56,10 @@ const WhatItDoes = () => {
               <div className="mb-6">
                 {feature.icon}
               </div>
-              <h3 className="text-[20px] font-bold text-black mb-3">
+              <h3 className="text-[20px] font-medium text-black mb-3 font-roboto leading-[100%]">
                 {feature.title}
               </h3>
-              <p className="text-[11px] text-black leading-relaxed font-inter font-normal">
+              <p className="text-[18px] text-black leading-[100%] font-roboto font-normal">
                 {feature.description}
               </p>
               

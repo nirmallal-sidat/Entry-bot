@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className="relative  justify-center flex items-center pt-4 overflow-hidden font-nunito bg-white">
       {/* Social Icons - Left Side */}
-      <div className="fixed left-10 bottom-10 hidden lg:flex flex-col gap-10 z-50">
+      <div className="fixed left-10 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-10 z-50">
         <Link href="#" className="text-black hover:text-zinc-600 hover:scale-110 transition-all duration-300">
           <Twitter size={32} />
         </Link>
@@ -23,13 +23,13 @@ const Hero = () => {
         </Link>
       </div>
 
-      <div className="max-w-[1900px] mx-auto px-4 lg:px-20 w-full flex flex-col lg:flex-row items-start justify-between ">
+      <div className="max-w-[1900px] mx-auto px-4 lg:px-20 w-full relative min-h-[600px] lg:min-h-[800px] flex items-center">
         {/* Text Content */}
-        <div className="flex-1 z-10 text-center lg:text-left pt-32">
-          <h1 className="text-[64px] lg:text-[100px] font-bold text-black leading-none mb-6 tracking-tight">
+        <div className="max-w-4xl z-10 text-center lg:text-left pt-20 lg:pt-0">
+          <h1 className="text-[64px] lg:text-[100px] font-bold text-black leading-[100%] mb-6 tracking-tight font-nunito">
                 Transform Documents into Data, Instantly
           </h1>
-          <p className="text-[18px] text-black max-w-lg mb-12 leading-relaxed font-medium">
+          <p className="text-[18px] text-black max-w-lg mb-12 leading-[100%] font-normal mx-auto lg:mx-0 font-roboto">
             Entrybot uses intelligent OCR and AI vision to extract, process, and manage data from any document type - invoices, receipts, bank statements, or scanned files.
           </p>
           
@@ -46,14 +46,14 @@ const Hero = () => {
           </Link>
         </div>
 
-        {/* Banner Image Container */}
-        <div className="flex-[1.5] relative w-full h-[300px] sm:h-[450px] md:h-[550px] lg:h-[500px] xl:h-[600px] min-[1700px]:h-[700px] flex justify-end mt-16 lg:mt-0">
-          <div className="relative w-full h-full opacity-100 max-w-[1000px] lg:max-w-[900px]">
+        {/* Banner Image Container - Now Background & Right Aligned */}
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-full lg:w-[95%] h-full lg:h-[120%] z-0 opacity-40 lg:opacity-100 pointer-events-none">
+          <div className="relative w-full h-full">
             <Image 
               src="/Bannerimg.png" 
               alt="Entrybot Banner" 
               fill
-              className="object-right object-contain md:object-cover lg:object-cover"
+              className="object-right object-contain"
               style={{ transform: 'rotate(0deg)' }}
               priority
             />
