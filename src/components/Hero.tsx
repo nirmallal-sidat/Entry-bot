@@ -23,7 +23,7 @@ const Hero = () => {
         </Link>
       </div>
 
-      <div className="max-w-[1900px] mx-auto px-4 lg:px-20 w-full relative min-h-[600px] lg:min-h-[800px] flex items-center">
+      <div className="max-w-[1900px] mx-auto px-4 lg:px-20 w-full relative min-h-[600px] lg:min-h-[760px] flex items-center">
         {/* Text Content */}
         <div className="max-w-4xl z-10 text-center lg:text-left pt-20 lg:pt-0">
           <h1 className="text-[64px] lg:text-[100px] font-bold text-black leading-[100%] mb-6 tracking-tight font-nunito">
