@@ -34,17 +34,17 @@ const Footer = () => {
             <div className="mb-8">
               <span className="text-zinc-400 text-[13px] font-medium block mb-4 uppercase tracking-tighter">- Product</span>
               <ul className="space-y-4">
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Integrations</Link></li>
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Revenue automation</Link></li>
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">API</Link></li>
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Embedded accounting</Link></li>
+                <li><Link href="/features" className="text-black text-[15px] font-bold hover:underline transition-all">Integrations</Link></li>
+                <li><Link href="/features" className="text-black text-[15px] font-bold hover:underline transition-all">Revenue automation</Link></li>
+                <li><Link href="/features" className="text-black text-[15px] font-bold hover:underline transition-all">API</Link></li>
+                <li><Link href="/features" className="text-black text-[15px] font-bold hover:underline transition-all">Embedded accounting</Link></li>
               </ul>
             </div>
 
             <div>
               <span className="text-zinc-400 text-[13px] font-medium block mb-4 uppercase tracking-tighter">- Business Stage</span>
               <ul className="space-y-4">
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Startups</Link></li>
+                <li><Link href="/solutions" className="text-black text-[15px] font-bold hover:underline transition-all">Startups</Link></li>
                 <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Small & medium business</Link></li>
               </ul>
             </div>
@@ -88,12 +88,12 @@ const Footer = () => {
             <div>
               <h3 className="text-[14px] font-bold text-black mb-6 tracking-wider">COMPANY</h3>
               <ul className="space-y-4">
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Pricing</Link></li>
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">About Entrybot</Link></li>
+                <li><Link href="/pricing" className="text-black text-[15px] font-bold hover:underline transition-all">Pricing</Link></li>
+                <li><Link href="/about" className="text-black text-[15px] font-bold hover:underline transition-all">About Entrybot</Link></li>
                 <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">How it works</Link></li>
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Partner with Us</Link></li>
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Careers</Link></li>
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Security</Link></li>
+                <li><Link href="/partner-with-us" className="text-black text-[15px] font-bold hover:underline transition-all">Partner with Us</Link></li>
+                <li><Link href="/careers" className="text-black text-[15px] font-bold hover:underline transition-all">Careers</Link></li>
+                <li><Link href="/security" className="text-black text-[15px] font-bold hover:underline transition-all">Security</Link></li>
               </ul>
             </div>
           </div>
