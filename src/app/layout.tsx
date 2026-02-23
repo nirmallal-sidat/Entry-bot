@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Nunito, Roboto, Inter } from "next/font/google";
+import { Nunito, Roboto} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
+
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -23,14 +17,9 @@ const nunito = Nunito({
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700", "900"],
+  weight: ["300", "400", "500", "700"],
 });
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 export const metadata: Metadata = {
   title: "Entrybot - Modern Accounting Platform",
@@ -45,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${nunito.variable} ${roboto.variable} ${inter.variable} antialiased`}
+        className={` ${nunito.variable} ${roboto.variable}  antialiased`}
       >
         <div className="flex min-h-screen flex-col bg-white">
           <Navbar />

@@ -22,27 +22,29 @@ const PartnersSection = () => {
     <section className="py-24 px-4 bg-white font-nunito border-t border-zinc-100">
       <div className="max-w-[1900px] mx-auto lg:px-20">
         {/* Header Area */}
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-16 gap-8">
-          <div className="max-w-3xl">
-            <h2 className="text-[40px] md:text-[56px] font-bold text-black mb-6 leading-[100%] font-nunito">
-              Build with the teams shaping<br className="hidden md:block" /> the modern financial stack.
-            </h2>
-            <p className="text-[18px] text-black max-w-2xl font-normal font-roboto leading-[100%]">
-              Entrybot partners with leading fintech and software platforms to deliver real-time, reliable accounting infrastructure. If you're building where modern businesses live, you should be building with us.
-            </p>
-          </div>
-          
-          <Link href="#" className="inline-flex items-center group mb-2">
-            <span className="text-[18px] font-medium text-black mr-3">More</span>
-            <div className="relative w-[80px] h-[40px]">
-              <Image 
-                src="/Arrowdesign.png" 
-                alt="Arrow" 
-                fill
-                className="object-contain"
-              />
+        <div className="max-w-[1500px] mx-auto">
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-16 gap-8">
+            <div className="max-w-3xl">
+              <h2 className="text-[40px] md:text-[56px] font-bold text-black mb-6 leading-[100%] font-nunito">
+                Build with the teams shaping<br className="hidden md:block" /> the modern financial stack.
+              </h2>
+              <p className="text-[18px] text-black max-w-2xl font-normal font-roboto leading-[100%]">
+                Entrybot partners with leading fintech and software platforms to deliver real-time, reliable accounting infrastructure. If you're building where modern businesses live, you should be building with us.
+              </p>
             </div>
-          </Link>
+            
+            <Link href="#" className="inline-flex items-center group mb-2">
+              <span className="text-[18px] font-medium text-black mr-3">More</span>
+              <div className="relative w-[80px] h-[40px]">
+                <Image 
+                  src="/Arrowdesign.png" 
+                  alt="Arrow" 
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </Link>
+          </div>
         </div>
 
         {/* Partners Grid Section */}

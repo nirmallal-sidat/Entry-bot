@@ -82,13 +82,13 @@ const ScaleFasterSection = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className={`relative ${card.bgColor} p-10 rounded-[20px] w-full max-w-[560px] h-[360px] flex flex-col justify-between transition-all duration-300`}
+              className={`relative ${card.bgColor} p-8 rounded-[20px] w-full max-w-[560px] h-[280px] flex flex-col justify-between transition-all duration-300`}
             >
               <div className="relative z-10">
-                <h3 className="text-[24px] font-bold text-black mb-4 tracking-tight font-nunito leading-[100%]">
+                <h3 className="text-[22px] font-bold text-black mb-4 tracking-tight font-nunito leading-[100%]">
                   {card.title}
                 </h3>
-                <p className="text-[18px] text-black leading-[120%] font-roboto font-normal">
+                <p className="text-[16px] text-black leading-[120%] font-roboto font-normal">
                   {card.description}
                 </p>
               </div>

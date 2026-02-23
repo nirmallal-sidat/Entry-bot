@@ -29,7 +29,7 @@ const TakeBackHours = () => {
           Ready to take back<br />hours every week?
         </h2>
         <p className="text-[18px] text-black max-w-xl mx-auto mb-12 font-normal font-roboto leading-[100%]">
-          Join the 7,000+ companies and firms using Entrybot to keep books accurate, up to date, and fast to close.
+          Join the 7,000+ companies and firms using Puzzle to keep books accurate, up to date, and fast to close.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

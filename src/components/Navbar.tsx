@@ -152,6 +152,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
+
           </nav>
         </div>
 
@@ -296,7 +297,7 @@ const Navbar = () => {
             Pricing
           </Link>
           <Link 
-            href="#solutions" 
+            href="/#solutions" 
             className="text-[20px] font-bold text-white border-b border-white/10 pb-2"
             onClick={() => setIsOpen(false)}
           >

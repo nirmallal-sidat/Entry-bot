@@ -21,19 +21,19 @@ const ProblemSection = () => {
   ];
 
   return (
-    <section className="py-24 px-4 bg-white font-nunito">
-      <div className="max-w-7xl mx-auto text-center">
+    <section className="py-12 px-4 bg-white font-nunito">
+      <div className="max-w-[1440px] mx-auto text-center">
         {/* Label and Heading */}
         <p className="text-[20px] font-bold text-black mb-4 font-roboto">The Problem</p>
-        <h2 className="text-[40px] md:text-[56px] font-bold text-black mb-16 leading-[100%] font-nunito">
+        <h2 className="text-[40px] md:text-[56px] font-bold text-black mb-8 leading-[100%] font-nunito">
           Your team deserves better than manual data entry
         </h2>
 
         {/* Problems Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[40px] mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[40px] mb-8">
           {problems.map((problem, index) => (
             <div key={index} className="flex flex-col items-center">
-              <div className="mb-8">
+              <div className="mb-4">
                 {problem.icon}
               </div>
               <p className="text-[18px] font-normal text-black leading-[100%] font-roboto text-center max-w-[300px]">

@@ -33,7 +33,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="py-24 px-4 bg-white font-nunito">
+    <section id="faq" className="py-24 px-4 bg-white font-nunito">
       <div className="max-w-[1900px] mx-auto lg:px-20">
         <h2 className="text-[40px] md:text-[56px] font-bold text-black text-center mb-10 leading-[100%] font-nunito">
           FAQs

@@ -64,7 +64,7 @@ const Footer = () => {
               <h3 className="text-[14px] font-bold text-black mb-6 tracking-wider">RESOURCES</h3>
               <ul className="space-y-4">
                 <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Entrybot vs QuickBooks</Link></li>
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Blog & news</Link></li>
+                <li><Link href="/blog" className="text-black text-[15px] font-bold hover:underline transition-all">Blog & news</Link></li>
                 <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Customer stories</Link></li>
                 <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Partner rewards</Link></li>
                 <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Time saving calculator</Link></li>
@@ -80,8 +80,8 @@ const Footer = () => {
               <ul className="space-y-4">
                 <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Find an Accountant</Link></li>
                 <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Help center</Link></li>
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Contact support</Link></li>
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">FAQs</Link></li>
+                <li><Link href="/contact-support" className="text-black text-[15px] font-bold hover:underline transition-all">Contact support</Link></li>
+                <li><Link href="/#faq" className="text-black text-[15px] font-bold hover:underline transition-all">FAQs</Link></li>
               </ul>
             </div>
 
