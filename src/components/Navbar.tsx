@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Menu, X, History, Users, Code, Boxes, Zap, Shield, ArrowUpRight } from "lucide-react";
+import { Menu, X, History, Users, Code, Boxes, Zap, Shield, ArrowUpRight, TrendingUp, Code2 } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -100,23 +100,77 @@ const Navbar = () => {
               Pricing
             </Link>
 
-            <div className="flex items-center gap-2 group cursor-pointer">
-              <Link 
-                href="/solutions" 
-                className="text-[18px] font-medium text-black leading-none group-hover:text-zinc-600 transition-colors"
-              >
-                Solutions
-              </Link>
-              <svg 
-                width="10" 
-                height="6" 
-                viewBox="0 0 10 6" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-                className="group-hover:translate-y-0.5 transition-transform text-black"
-              >
-                <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
+            <div className="relative group cursor-pointer">
+              <div className="flex items-center gap-2">
+                <Link 
+                  href="/solutions" 
+                  className="text-[18px] font-medium text-black leading-none group-hover:text-zinc-600 transition-colors"
+                >
+                  Solutions
+                </Link>
+                <svg 
+                  width="10" 
+                  height="6" 
+                  viewBox="0 0 10 6" 
+                  fill="none" 
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="group-hover:translate-y-0.5 transition-transform text-black"
+                >
+                  <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+
+              {/* Dropdown Menu */}
+              <div className="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
+                <div className="bg-zinc-900 border-2 border-black p-4 rounded-sm shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] min-w-[280px]">
+                  <ul className="space-y-2">
+                    <li>
+                      <Link href="/integrations" className="flex items-start gap-4 p-3 rounded hover:bg-white/5 transition-colors group/item">
+                        <div className="w-10 h-10 bg-zinc-800 rounded flex items-center justify-center shrink-0 group-hover/item:bg-white/10 transition-colors">
+                          <Boxes size={20} className="text-white" />
+                        </div>
+                        <div>
+                          <p className="text-[15px] font-bold text-white mb-0.5">Integrations</p>
+                          <p className="text-[12px] text-zinc-400 font-medium">Connect your favorite tools</p>
+                        </div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/revenue-automation" className="flex items-start gap-4 p-3 rounded hover:bg-white/5 transition-colors group/item">
+                        <div className="w-10 h-10 bg-zinc-800 rounded flex items-center justify-center shrink-0 group-hover/item:bg-white/10 transition-colors">
+                          <TrendingUp size={20} className="text-white" />
+                        </div>
+                        <div>
+                          <p className="text-[15px] font-bold text-white mb-0.5">Revenue Automation</p>
+                          <p className="text-[12px] text-zinc-400 font-medium">Maximize your cash flow</p>
+                        </div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/api-docs" className="flex items-start gap-4 p-3 rounded hover:bg-white/5 transition-colors group/item">
+                        <div className="w-10 h-10 bg-zinc-800 rounded flex items-center justify-center shrink-0 group-hover/item:bg-white/10 transition-colors">
+                          <Code2 size={20} className="text-white" />
+                        </div>
+                        <div>
+                          <p className="text-[15px] font-bold text-white mb-0.5">API</p>
+                          <p className="text-[12px] text-zinc-400 font-medium">Build custom integrations</p>
+                        </div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/features" className="flex items-start gap-4 p-3 rounded hover:bg-white/5 transition-colors group/item">
+                        <div className="w-10 h-10 bg-zinc-800 rounded flex items-center justify-center shrink-0 group-hover/item:bg-white/10 transition-colors">
+                          <Zap size={20} className="text-white" />
+                        </div>
+                        <div>
+                          <p className="text-[15px] font-bold text-white mb-0.5">Automation</p>
+                          <p className="text-[12px] text-zinc-400 font-medium">Streamline your workflows</p>
+                        </div>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
 
@@ -211,6 +265,27 @@ const Navbar = () => {
             onClick={() => setIsOpen(false)}
           >
             Pricing
+          </Link>
+          <Link 
+            href="/integrations" 
+            className="text-[20px] font-bold text-white border-b border-white/10 pb-2"
+            onClick={() => setIsOpen(false)}
+          >
+            Integrations
+          </Link>
+          <Link 
+            href="/revenue-automation" 
+            className="text-[20px] font-bold text-white border-b border-white/10 pb-2"
+            onClick={() => setIsOpen(false)}
+          >
+            Revenue Automation
+          </Link>
+          <Link 
+            href="/api-docs" 
+            className="text-[20px] font-bold text-white border-b border-white/10 pb-2"
+            onClick={() => setIsOpen(false)}
+          >
+            API
           </Link>
           <Link 
             href="/solutions" 
