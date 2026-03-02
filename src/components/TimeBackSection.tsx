@@ -66,8 +66,8 @@ const TimeBackSection = () => {
   );
 
   const CardRow = ({ title, cards }: { title: string, cards: typeof startupsCards }) => (
-    <div className="mb-16">
-      <div className="flex justify-between items-end mb-12">
+    <div className="mb-16 overflow-hidden">
+      <div className="flex justify-between items-center mb-12 px-2">
         <h3 className="text-[30px] font-bold text-black font-nunito leading-[100%]">{title}</h3>
         <MoreButton />
       </div>
@@ -76,8 +76,6 @@ const TimeBackSection = () => {
           <div key={index} className="bg-[#FFE500] pt-8 px-8 pb-0 rounded-[20px] flex flex-col w-full max-w-[348px] h-[428.5px] relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
             <h4 className="text-[20px] font-medium text-black mb-2 leading-[100%] font-roboto">{card.title}</h4>
             <p className="text-[18px] text-black mb-6 font-roboto font-normal leading-[100%]">{card.description}</p>
-            
-            {/* Mockup/Image Placeholder Area */}
             <div className="mt-auto bg-white rounded-t-2xl w-full h-[250px] relative shadow-lg overflow-hidden translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                 <div className="relative w-full h-full p-4">
                   <Image 
@@ -95,7 +93,7 @@ const TimeBackSection = () => {
   );
 
   return (
-    <section className="py-24 px-4 bg-[#F4F4F4] font-nunito">
+    <section className="py-24 px-4 bg-[#F4F4F4] font-nunito overflow-hidden">
       <div className="max-w-[1900px] mx-auto lg:px-20">
         <h2 className="text-[40px] md:text-[56px] font-bold text-black text-center mb-20 leading-[100%] font-nunito">
          Smart automation for every business size

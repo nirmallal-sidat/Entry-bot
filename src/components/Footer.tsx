@@ -45,7 +45,7 @@ const Footer = () => {
               <span className="text-zinc-400 text-[13px] font-medium block mb-4 uppercase tracking-tighter">- Business Stage</span>
               <ul className="space-y-4">
                 <li><Link href="/startups" className="text-black text-[15px] font-bold hover:underline transition-all">Startups</Link></li>
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Small & medium business</Link></li>
+                <li><Link href="/small-medium-business" className="text-black text-[15px] font-bold hover:underline transition-all">Small & medium business</Link></li>
               </ul>
             </div>
           </div>
@@ -55,20 +55,20 @@ const Footer = () => {
             <div className="mb-12">
               <h3 className="text-[14px] font-bold text-black mb-6 tracking-wider">FOR ACCOUNTANTS & FIRMS</h3>
               <ul className="space-y-4">
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Entrybot for accountants</Link></li>
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Entrybot for firms</Link></li>
+                <li><Link href="/entrybot-for-accountants" className="text-black text-[15px] font-bold hover:underline transition-all">Entrybot for accountants</Link></li>
+                <li><Link href="/entrybot-for-firms" className="text-black text-[15px] font-bold hover:underline transition-all">Entrybot for firms</Link></li>
               </ul>
             </div>
 
             <div>
               <h3 className="text-[14px] font-bold text-black mb-6 tracking-wider">RESOURCES</h3>
               <ul className="space-y-4">
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Entrybot vs QuickBooks</Link></li>
+                <li><Link href="/entrybot-vs-quickbooks" className="text-black text-[15px] font-bold hover:underline transition-all">Entrybot vs QuickBooks</Link></li>
                 <li><Link href="/blog" className="text-black text-[15px] font-bold hover:underline transition-all">Blog & news</Link></li>
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Customer stories</Link></li>
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Partner rewards</Link></li>
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Time saving calculator</Link></li>
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Entrybot Certification Training</Link></li>
+                <li><Link href="/customer-stories" className="text-black text-[15px] font-bold hover:underline transition-all">Customer stories</Link></li>
+                <li><Link href="/partner-rewards" className="text-black text-[15px] font-bold hover:underline transition-all">Partner rewards</Link></li>
+                <li><Link href="/time-saving-calculator" className="text-black text-[15px] font-bold hover:underline transition-all">Time saving calculator</Link></li>
+                <li><Link href="/entrybot-certification" className="text-black text-[15px] font-bold hover:underline transition-all">Entrybot Certification Training</Link></li>
               </ul>
             </div>
           </div>
@@ -78,8 +78,8 @@ const Footer = () => {
             <div className="mb-12">
               <h3 className="text-[14px] font-bold text-black mb-6 tracking-wider">SUPPORT</h3>
               <ul className="space-y-4">
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Find an Accountant</Link></li>
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">Help center</Link></li>
+                <li><Link href="/find-an-accountant" className="text-black text-[15px] font-bold hover:underline transition-all">Find an Accountant</Link></li>
+                <li><Link href="/help-center" className="text-black text-[15px] font-bold hover:underline transition-all">Help center</Link></li>
                 <li><Link href="/contact-support" className="text-black text-[15px] font-bold hover:underline transition-all">Contact support</Link></li>
                 <li><Link href="/#faq" className="text-black text-[15px] font-bold hover:underline transition-all">FAQs</Link></li>
               </ul>
@@ -90,7 +90,7 @@ const Footer = () => {
               <ul className="space-y-4">
                 <li><Link href="/pricing" className="text-black text-[15px] font-bold hover:underline transition-all">Pricing</Link></li>
                 <li><Link href="/about" className="text-black text-[15px] font-bold hover:underline transition-all">About Entrybot</Link></li>
-                <li><Link href="#" className="text-black text-[15px] font-bold hover:underline transition-all">How it works</Link></li>
+                <li><Link href="/how-it-works" className="text-black text-[15px] font-bold hover:underline transition-all">How it works</Link></li>
                 <li><Link href="/partner-with-us" className="text-black text-[15px] font-bold hover:underline transition-all">Partner with Us</Link></li>
                 <li><Link href="/careers" className="text-black text-[15px] font-bold hover:underline transition-all">Careers</Link></li>
                 <li><Link href="/security" className="text-black text-[15px] font-bold hover:underline transition-all">Security</Link></li>
