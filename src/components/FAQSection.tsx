@@ -35,21 +35,21 @@ const FAQSection = () => {
   return (
     <section id="faq" className="py-24 px-4 bg-white font-nunito">
       <div className="max-w-[1900px] mx-auto lg:px-20">
-        <h2 className="text-[40px] md:text-[56px] font-bold text-black text-center mb-10 leading-[100%] font-nunito">
+        <h2 className="text-[48px] md:text-[64px] font-bold text-black text-center mb-12 tracking-tight leading-[100%]">
           FAQs
         </h2>
 
         {/* Custom Tabs */}
-        <div className="flex justify-center mb-16">
-          <div className="bg-[#FFE500] p-1.5 rounded-full flex gap-1">
+        <div className="flex justify-center mb-20">
+          <div className="bg-[#FFE500] p-1.5 rounded-full flex gap-1 shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-black/5">
             <button
               onClick={() => {
                 setActiveTab("Companies");
                 setActiveIndex(null);
               }}
-              className={`px-8 py-2.5 rounded-full text-[16px] font-bold transition-all duration-300 ${
+              className={`px-10 py-3 rounded-full text-[16px] font-bold transition-all duration-300 ${
                 activeTab === "Companies"
-                  ? "bg-black text-white shadow-lg"
+                  ? "bg-black text-white shadow-xl scale-105"
                   : "text-black hover:bg-black/5"
               }`}
             >
@@ -60,9 +60,9 @@ const FAQSection = () => {
                 setActiveTab("Accounting firms");
                 setActiveIndex(null);
               }}
-              className={`px-8 py-2.5 rounded-full text-[16px] font-bold transition-all duration-300 ${
+              className={`px-10 py-3 rounded-full text-[16px] font-bold transition-all duration-300 ${
                 activeTab === "Accounting firms"
-                  ? "bg-black text-white shadow-lg"
+                  ? "bg-black text-white shadow-xl scale-105"
                   : "text-black hover:bg-black/5"
               }`}
             >
@@ -72,34 +72,35 @@ const FAQSection = () => {
         </div>
 
         {/* FAQ List */}
-        <div className="max-w-7xl mx-auto border-t border-zinc-100">
+        <div className="max-w-5xl mx-auto">
           {currentFAQs.map((question, index) => (
             <div
               key={index}
-              className="border-b border-zinc-100 transition-all duration-200"
+              className="border-b border-zinc-100 last:border-0"
             >
               <div 
                 onClick={() => toggleFAQ(index)}
-                className="py-8 flex items-center justify-between group cursor-pointer hover:bg-zinc-50/50 px-4"
+                className="py-10 flex items-center justify-between group cursor-pointer hover:bg-zinc-50/50 px-6 rounded-2xl transition-all duration-300"
               >
-                <h3 className="text-[18px] md:text-[20px] font-medium text-black transition-transform duration-300 font-roboto leading-[100%]">
+                <h3 className={`text-[20px] md:text-[24px] font-bold text-black transition-all duration-300 leading-tight ${
+                  activeIndex === index ? "text-zinc-900" : "text-zinc-800"
+                }`}>
                   {question}
                 </h3>
-                <ChevronRight 
-                  size={20} 
-                  className={`transition-all duration-300 ${
-                    activeIndex === index 
-                      ? "text-black rotate-90" 
-                      : "text-zinc-300 group-hover:text-black group-hover:translate-x-1"
-                  }`} 
-                />
+                <div className={`transition-all duration-300 ${
+                  activeIndex === index 
+                    ? "rotate-90 text-black translate-x-1" 
+                    : "text-zinc-400 group-hover:text-black group-hover:translate-x-2"
+                }`}>
+                  <ChevronRight size={28} strokeWidth={2.5} />
+                </div>
               </div>
               
               {/* Answer Area (Accordion Content) */}
-              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                activeIndex === index ? "max-h-[500px] pb-8 opacity-100" : "max-h-0 opacity-0"
+              <div className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                activeIndex === index ? "max-h-[500px] pb-10 opacity-100" : "max-h-0 opacity-0"
               }`}>
-                <div className="px-4 text-[18px] text-black leading-[100%] max-w-4xl font-roboto font-normal">
+                <div className="px-6 text-[18px] md:text-[20px] text-zinc-600 leading-relaxed max-w-4xl font-normal font-roboto">
                   Entrybot is designed to automate the heavy lifting of accounting using advanced AI. 
                   It seamlessly handles categorization, reconciliations, and real-time reporting, 
                   allowing you to focus on growing your business while maintaining 100% financial accuracy.

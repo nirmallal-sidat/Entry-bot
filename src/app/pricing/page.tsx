@@ -140,38 +140,39 @@ const PricingPage = () => {
       {/* FAQ or Comparison Section */}
       <section className="py-24 px-4 bg-white font-nunito border-t border-zinc-100">
         <div className="max-w-[1900px] mx-auto lg:px-20">
-          <h2 className="text-[40px] md:text-[56px] font-bold text-black text-center mb-10 leading-[100%] font-nunito">
+          <h2 className="text-[48px] md:text-[64px] font-bold text-black text-center mb-12 tracking-tight leading-[100%]">
             FAQs
           </h2>
           
-          <div className="max-w-7xl mx-auto border-t border-zinc-100">
+          <div className="max-w-5xl mx-auto">
               {pricingFaqs.map((faq, index) => (
                 <div
                   key={index}
-                  className="border-b border-zinc-100 transition-all duration-200"
+                  className="border-b border-zinc-100 last:border-0"
                 >
                   <div 
                     onClick={() => toggleFAQ(index)}
-                    className="py-8 flex items-center justify-between group cursor-pointer hover:bg-zinc-50/50 px-4"
+                    className="py-10 flex items-center justify-between group cursor-pointer hover:bg-zinc-50/50 px-6 rounded-2xl transition-all duration-300"
                   >
-                    <h3 className="text-[18px] md:text-[20px] font-medium text-black transition-transform duration-300 font-roboto leading-[100%]">
+                    <h3 className={`text-[20px] md:text-[24px] font-bold text-black transition-all duration-300 leading-tight ${
+                      activeFaqIndex === index ? "text-zinc-900" : "text-zinc-800"
+                    }`}>
                       {faq.question}
                     </h3>
-                    <ChevronRight 
-                      size={20} 
-                      className={`transition-all duration-300 ${
-                        activeFaqIndex === index 
-                          ? "text-black rotate-90" 
-                          : "text-zinc-300 group-hover:text-black group-hover:translate-x-1"
-                      }`} 
-                    />
+                    <div className={`transition-all duration-300 ${
+                      activeFaqIndex === index 
+                        ? "rotate-90 text-black translate-x-1" 
+                        : "text-zinc-400 group-hover:text-black group-hover:translate-x-2"
+                    }`}>
+                      <ChevronRight size={28} strokeWidth={2.5} />
+                    </div>
                   </div>
                   
                   {/* Answer Area (Accordion Content) */}
-                  <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    activeFaqIndex === index ? "max-h-[500px] pb-8 opacity-100" : "max-h-0 opacity-0"
+                  <div className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                    activeFaqIndex === index ? "max-h-[500px] pb-10 opacity-100" : "max-h-0 opacity-0"
                   }`}>
-                    <div className="px-4 text-[18px] text-zinc-600 leading-normal max-w-4xl font-roboto font-normal">
+                    <div className="px-6 text-[18px] md:text-[20px] text-zinc-600 leading-relaxed max-w-4xl font-normal font-roboto">
                       {faq.answer}
                     </div>
                   </div>
