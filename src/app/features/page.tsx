@@ -30,8 +30,8 @@ const FeaturesPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-24 px-4 bg-[#F4F4F4] font-nunito">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="mt-20 bg-[#F4F4F4] font-nunito">
+        <div className="py-24 px-4 max-w-4xl mx-auto text-center">
           <h1 className="text-[48px] md:text-[64px] font-bold text-black mb-8 leading-tight">
             Powerful Features for Modern Finance
           </h1>
@@ -43,7 +43,7 @@ const FeaturesPage = () => {
       </section>
 
       {/* Feature Highlight Section */}
-      <section className="py-24 px-4 bg-white font-nunito border-t border-zinc-100">
+      <section className="py-24 px-4 bg-white font-nunito">
         <div className="max-w-[1900px] mx-auto lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>

@@ -1,10 +1,32 @@
 "use client";
 
 import Link from "next/link";
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, ChevronRight } from "lucide-react";
+import { useState } from "react";
 import TakeBackHours from "@/components/TakeBackHours";
 
 const PricingPage = () => {
+  const [activeFaqIndex, setActiveFaqIndex] = useState<number | null>(null);
+
+  const toggleFAQ = (index: number) => {
+    setActiveFaqIndex(activeFaqIndex === index ? null : index);
+  };
+
+  const pricingFaqs = [
+    {
+      question: "Can I change plans later?",
+      answer: "Yes, you can upgrade or downgrade your plan at any time directly from your dashboard settings."
+    },
+    {
+      question: "What happens after my trial?",
+      answer: "After your 14-day Professional trial, you can either upgrade or you'll be automatically moved to our Starter plan."
+    },
+    {
+      question: "Is my data secure?",
+      answer: "Absolutely. We use bank-grade encryption and are SOC2 compliant to ensure your financial data is always protected."
+    }
+  ];
+
   const plans = [
     {
       name: "Starter",
@@ -55,8 +77,8 @@ const PricingPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-24 px-4 bg-[#F4F4F4] font-nunito text-center">
-        <div className="max-w-4xl mx-auto">
+      <section className="mt-20 bg-[#F4F4F4] font-nunito">
+        <div className="py-24 px-4 max-w-4xl mx-auto text-center">
           <h1 className="text-[48px] md:text-[64px] font-bold text-black mb-8 leading-tight">
             Simple, Transparent Pricing
           </h1>
@@ -115,27 +137,46 @@ const PricingPage = () => {
         </div>
       </section>
 
-      {/* FAQ or Comparison Section (Compact) */}
-      <section className="py-24 px-4 bg-[#F4F4F4] font-nunito border-t border-zinc-100">
+      {/* FAQ or Comparison Section */}
+      <section className="py-24 px-4 bg-white font-nunito border-t border-zinc-100">
         <div className="max-w-[1900px] mx-auto lg:px-20">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-[36px] md:text-[48px] font-bold text-black mb-8 leading-tight">
-              Frequently Asked Questions
-            </h2>
-            <div className="space-y-8 text-left">
-              <div>
-                <h4 className="text-[20px] font-bold text-black mb-2">Can I change plans later?</h4>
-                <p className="text-[16px] text-black font-medium">Yes, you can upgrade or downgrade your plan at any time directly from your dashboard settings.</p>
-              </div>
-              <div>
-                <h4 className="text-[20px] font-bold text-black mb-2">What happens after my trial?</h4>
-                <p className="text-[16px] text-black font-medium">After your 14-day Professional trial, you can either upgrade or you'll be automatically moved to our Starter plan.</p>
-              </div>
-              <div>
-                <h4 className="text-[20px] font-bold text-black mb-2">Is my data secure?</h4>
-                <p className="text-[16px] text-black font-medium">Absolutely. We use bank-grade encryption and are SOC2 compliant to ensure your financial data is always protected.</p>
-              </div>
-            </div>
+          <h2 className="text-[40px] md:text-[56px] font-bold text-black text-center mb-10 leading-[100%] font-nunito">
+            FAQs
+          </h2>
+          
+          <div className="max-w-7xl mx-auto border-t border-zinc-100">
+              {pricingFaqs.map((faq, index) => (
+                <div
+                  key={index}
+                  className="border-b border-zinc-100 transition-all duration-200"
+                >
+                  <div 
+                    onClick={() => toggleFAQ(index)}
+                    className="py-8 flex items-center justify-between group cursor-pointer hover:bg-zinc-50/50 px-4"
+                  >
+                    <h3 className="text-[18px] md:text-[20px] font-medium text-black transition-transform duration-300 font-roboto leading-[100%]">
+                      {faq.question}
+                    </h3>
+                    <ChevronRight 
+                      size={20} 
+                      className={`transition-all duration-300 ${
+                        activeFaqIndex === index 
+                          ? "text-black rotate-90" 
+                          : "text-zinc-300 group-hover:text-black group-hover:translate-x-1"
+                      }`} 
+                    />
+                  </div>
+                  
+                  {/* Answer Area (Accordion Content) */}
+                  <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                    activeFaqIndex === index ? "max-h-[500px] pb-8 opacity-100" : "max-h-0 opacity-0"
+                  }`}>
+                    <div className="px-4 text-[18px] text-zinc-600 leading-normal max-w-4xl font-roboto font-normal">
+                      {faq.answer}
+                    </div>
+                  </div>
+                </div>
+              ))}
           </div>
         </div>
       </section>
