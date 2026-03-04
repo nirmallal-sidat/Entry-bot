@@ -27,7 +27,7 @@ const Hero = () => {
         {/* Text Content */}
         <div className="max-w-4xl z-10 text-center lg:text-left pt-20 lg:pt-0">
           <h1 className="text-[56px] md:text-[80px] xl:text-[100px] font-bold text-black leading-[110%] md:leading-[136px] mb-6 tracking-tight font-nunito">
-                Transform Documents into Data, Instantly
+                Transform Documents into Data.
           </h1>
           <p className="text-[18px] text-black max-w-lg mb-12 leading-[120%] md:leading-[21px] font-normal mx-auto lg:mx-0 font-roboto">
             Entrybot uses intelligent OCR and AI vision to extract, process, and manage data from any document type - invoices, receipts, bank statements, or scanned files.
