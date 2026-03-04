@@ -10,14 +10,14 @@ export default function TermsAndConditions() {
           <span className="font-bold">Back to Home</span>
         </Link>
         
-        <div className="relative p-12 bg-zinc-50 border-2 border-black rounded-sm shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+        <div className="relative p-6 md:p-12 bg-zinc-50 border-2 border-black rounded-sm shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
           {/* Corner Accents */}
           <div className="absolute top-0 left-0 w-8 h-8 border-t-4 border-l-4 border-black" />
           <div className="absolute top-0 right-0 w-8 h-8 border-t-4 border-r-4 border-black" />
           <div className="absolute bottom-0 left-0 w-8 h-8 border-b-4 border-l-4 border-black" />
           <div className="absolute bottom-0 right-0 w-8 h-8 border-b-4 border-r-4 border-black" />
 
-          <h1 className="text-4xl md:text-5xl font-black text-black mb-8 tracking-tighter uppercase italic">
+          <h1 className="text-3xl md:text-5xl font-black text-black mb-8 tracking-tighter uppercase italic">
             Terms & Conditions
           </h1>
           
@@ -55,7 +55,7 @@ export default function TermsAndConditions() {
               <h2 className="text-2xl font-bold bg-[#FFE500] inline-block px-4 py-1 border-2 border-black mb-6">
                 3. Service Availability
               </h2>
-              <p className="pl-2 bg-black text-white p-6 border-l-8 border-[#FFE500]">
+              <p className="pl-2 bg-black text-white p-4 md:p-6 border-l-8 border-[#FFE500]">
                 We strive for 99.9% uptime, but we do not guarantee uninterrupted service. Maintenance and updates are performed to amplify the platform's performance and clarity.
               </p>
             </section>

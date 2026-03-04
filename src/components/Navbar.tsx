@@ -181,36 +181,44 @@ const Navbar = () => {
 
         {/* Sleek Pill-shaped Search Bar (Image Match) */}
         {isSearchOpen && (
-          <div className="fixed inset-0 z-100 flex items-start justify-center pt-[10vh] px-4 font-nunito">
+          <div className="fixed inset-0 z-100 flex items-start justify-center pt-[5vh] md:pt-[10vh] px-4 font-nunito">
             {/* Backdrop */}
             <div 
-              className="fixed inset-0 bg-white/20 backdrop-blur-md transition-opacity duration-300"
+              className="fixed inset-0 bg-white/40 backdrop-blur-xl transition-opacity duration-300"
               onClick={() => setIsSearchOpen(false)}
             />
             
             {/* Modal Content - Pill-shaped bar */}
             <div className="relative w-full max-w-4xl animate-in fade-in zoom-in duration-200">
-              <div className="flex items-center bg-[#E5E7EB] rounded-full px-8 py-4 w-full shadow-sm">
+              <div className="flex items-center bg-[#E5E7EB] rounded-full px-4 md:px-8 py-3 md:py-4 w-full shadow-lg border border-white/50">
                 <input 
                   type="text" 
                   placeholder="Search"
-                  className="flex-1 bg-transparent text-[#6B7280] text-[20px] focus:outline-none placeholder:text-[#6B7280]"
+                  className="flex-1 bg-transparent text-[#1F2937] text-[16px] md:text-[20px] focus:outline-none placeholder:text-[#6B7280]"
                   autoFocus
                 />
                 <button 
                   onClick={() => setIsSearchOpen(false)}
-                  className="ml-4"
+                  className="ml-2 md:ml-4 p-2"
                 >
                   <svg 
                     className="text-[#3730A3]" 
-                    width="24" 
-                    height="24" 
+                    width="20" 
+                    height="20" 
+                    md-width="24"
+                    md-height="24"
                     viewBox="0 0 24 24" 
                     fill="none" 
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
+                </button>
+                <button 
+                  onClick={() => setIsSearchOpen(false)}
+                  className="md:hidden ml-2 p-2 text-zinc-500"
+                >
+                  <X size={20} />
                 </button>
               </div>
             </div>

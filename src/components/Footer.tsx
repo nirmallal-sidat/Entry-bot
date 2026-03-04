@@ -5,30 +5,30 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#f8f8f8] border-t my-6 mx-8 border-2 border-zinc-200 font-nunito">
-      <div className="max-w-[1900px] mx-auto lg:px-20">
+    <footer className="bg-[#f8f8f8] mt-12 md:my-6 mx-0 md:mx-8 border-t-2 md:border-2 border-zinc-200 font-nunito">
+      <div className="max-w-[1900px] mx-auto px-6 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
           {/* Column 1: Logo & Socials */}
-          <div className="py-16 pr-8 border-b lg:border-b-0 lg:border-r border-zinc-200">
+          <div className="py-12 md:py-16 pr-8 border-b md:border-b-0 md:border-r border-zinc-200">
             <h2 className="text-2xl font-black text-black mb-8 tracking-tighter">ENTRYBOT</h2>
             <p className="text-black text-[15px] leading-relaxed mb-10 max-w-[280px] font-medium">
               Automated bookkeeping tasks and daily insights that amplify your financial clarity.
             </p>
             <div className="flex gap-4">
-              <Link href="#" className="w-12 h-12 bg-black text-white rounded flex items-center justify-center hover:bg-zinc-800 transition-all hover:scale-110">
-                <Twitter size={22} />
+              <Link href="#" className="w-10 h-10 md:w-12 md:h-12 bg-black text-white rounded flex items-center justify-center hover:bg-zinc-800 transition-all hover:scale-110">
+                <Twitter className="w-5 h-5 md:w-[22px] md:h-[22px]" />
               </Link>
-              <Link href="#" className="w-12 h-12 bg-black text-white rounded flex items-center justify-center hover:bg-zinc-800 transition-all hover:scale-110">
-                <Youtube size={22} />
+              <Link href="#" className="w-10 h-10 md:w-12 md:h-12 bg-black text-white rounded flex items-center justify-center hover:bg-zinc-800 transition-all hover:scale-110">
+                <Youtube className="w-5 h-5 md:w-[22px] md:h-[22px]" />
               </Link>
-              <Link href="#" className="w-12 h-12 bg-black text-white rounded flex items-center justify-center hover:bg-zinc-800 transition-all hover:scale-110">
-                <Linkedin size={22} />
+              <Link href="#" className="w-10 h-10 md:w-12 md:h-12 bg-black text-white rounded flex items-center justify-center hover:bg-zinc-800 transition-all hover:scale-110">
+                <Linkedin className="w-5 h-5 md:w-[22px] md:h-[22px]" />
               </Link>
             </div>
           </div>
 
           {/* Column 2: Solutions */}
-          <div className="py-16 px-8 border-b lg:border-b-0 lg:border-r border-zinc-200">
+          <div className="py-12 md:py-16 px-0 md:px-8 border-b md:border-b-0 lg:border-r border-zinc-200">
             <h3 className="text-[14px] font-bold text-black mb-8 tracking-wider">SOLUTIONS</h3>
             
             <div className="mb-8">
@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
 
           {/* Column 3: Accountants & Resources */}
-          <div className="py-16 px-8 border-b lg:border-b-0 lg:border-r border-zinc-200">
+          <div className="py-12 md:py-16 px-0 md:px-8 border-b lg:border-b-0 lg:border-r border-zinc-200">
             <div className="mb-12">
               <h3 className="text-[14px] font-bold text-black mb-6 tracking-wider">FOR ACCOUNTANTS & FIRMS</h3>
               <ul className="space-y-4">
@@ -74,7 +74,7 @@ const Footer = () => {
           </div>
 
           {/* Column 4: Support & Company */}
-          <div className="py-16 pl-8">
+          <div className="py-12 md:py-16 px-0 md:pl-8">
             <div className="mb-12">
               <h3 className="text-[14px] font-bold text-black mb-6 tracking-wider">SUPPORT</h3>
               <ul className="space-y-4">

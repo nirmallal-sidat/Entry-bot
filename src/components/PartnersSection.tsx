@@ -25,17 +25,17 @@ const PartnersSection = () => {
         <div className="max-w-[1500px] mx-auto">
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-16 gap-8">
             <div className="max-w-3xl">
-              <h2 className="text-[40px] md:text-[56px] font-bold text-black mb-6 leading-[100%] font-nunito">
+              <h2 className="text-[32px] md:text-[56px] font-bold text-black mb-6 leading-tight md:leading-[100%] font-nunito">
                 Build with the teams shaping<br className="hidden md:block" /> the modern financial stack.
               </h2>
-              <p className="text-[18px] text-black max-w-2xl font-normal font-roboto leading-[100%]">
+              <p className="text-[16px] md:text-[18px] text-black max-w-2xl font-normal font-roboto leading-relaxed md:leading-[100%]">
                 Entrybot partners with leading fintech and software platforms to deliver real-time, reliable accounting infrastructure. If you're building where modern businesses live, you should be building with us.
               </p>
             </div>
             
             <Link href="#" className="inline-flex items-center group mb-2">
               <span className="text-[18px] font-medium text-black mr-3">More</span>
-              <div className="relative w-[80px] h-[40px]">
+              <div className="relative w-[60px] md:w-[80px] h-[30px] md:h-[40px]">
                 <Image 
                   src="/Arrowdesign.png" 
                   alt="Arrow" 
@@ -48,25 +48,25 @@ const PartnersSection = () => {
         </div>
 
         {/* Partners Grid Section */}
-        <div className="relative max-w-[1500px] mx-auto">
+        <div className="relative max-w-[1500px] mx-auto border border-zinc-200">
           {/* Corner Accents - Perfectly Flush */}
-          <div className="absolute top-0 left-0 w-5 h-5 border-t-2 border-l-2 border-black z-10" />
-          <div className="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-black z-10" />
-          <div className="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-black z-10" />
-          <div className="absolute bottom-0 right-0 w-5 h-5 border-b-2 border-r-2 border-black z-10" />
+          <div className="absolute -top-px -left-px w-5 h-5 border-t-2 border-l-2 border-black z-10" />
+          <div className="absolute -top-px -right-px w-5 h-5 border-t-2 border-r-2 border-black z-10" />
+          <div className="absolute -bottom-px -left-px w-5 h-5 border-b-2 border-l-2 border-black z-10" />
+          <div className="absolute -bottom-px -right-px w-5 h-5 border-b-2 border-r-2 border-black z-10" />
 
-          {/* Grid container with light gray borders */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 border border-zinc-200">
+          {/* Grid container with light gray borders using Tailwind standard approach */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
             {partners.map((partner, index) => (
               <div 
                 key={index} 
-                className={`h-28 flex items-center justify-center border-zinc-200 transition-colors duration-200 hover:bg-zinc-50
-                  ${index % 5 !== 4 ? 'lg:border-r' : ''} 
-                  ${index < 5 ? 'lg:border-b' : ''}
-                  ${index % 3 !== 2 ? 'md:border-r' : ''}
-                  ${index % 2 !== 1 ? 'border-r' : ''}
-                  ${index < 6 || (index > 6 && index < 10) ? 'md:border-b' : ''}
-                  ${index < 8 || index === 9 ? 'border-b' : ''}
+                className={`h-24 md:h-28 flex items-center justify-center border-zinc-200 transition-colors duration-200 hover:bg-zinc-50 border-r border-b
+                  ${(index + 1) % 2 === 0 ? 'sm:border-r' : ''}
+                  ${(index + 1) % 3 === 0 ? 'md:border-r-0' : 'md:border-r'}
+                  ${(index + 1) % 5 === 0 ? 'lg:border-r-0' : 'lg:border-r'}
+                  ${index >= 8 ? 'border-b-0' : ''}
+                  ${index >= 6 ? 'md:border-b-0' : 'md:border-b'}
+                  ${index >= 5 ? 'lg:border-b-0' : 'lg:border-b'}
                 `}
               >
                 {partner.name === "box" ? (
@@ -96,7 +96,7 @@ const PartnersSection = () => {
                           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M2 12h20M2 12a10 10 0 0 1 20 0M2 12a10 10 0 0 0 20 0"/>
                           </svg>
-                          <span className="text-base tracking-[0.1em] font-bold">RIPPLING</span>
+                          <span className="text-base tracking-widest font-bold">RIPPLING</span>
                       </div>
                     )}
                     {partner.name === "shopify" && (

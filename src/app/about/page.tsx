@@ -35,11 +35,11 @@ const AboutPage = () => {
     <>
       {/* Hero Section */}
       <section className="mt-20 bg-[#F4F4F4] font-nunito">
-        <div className="py-24 px-4 max-w-4xl mx-auto text-center">
-          <h1 className="text-[48px] md:text-[64px] font-bold text-black mb-8 leading-tight">
+        <div className="py-20 md:py-24 px-6 max-w-4xl mx-auto text-center">
+          <h1 className="text-[36px] md:text-[64px] font-bold text-black mb-8 leading-tight">
             About Entrybot
           </h1>
-          <p className="text-[18px] text-black leading-relaxed max-w-2xl mx-auto font-medium">
+          <p className="text-[16px] md:text-[18px] text-black leading-relaxed max-w-2xl mx-auto font-medium">
             We're on a mission to make accounting simple, accurate, and real-time for modern businesses. 
             Founded in 2020, Entrybot has helped thousands of companies automate their bookkeeping and gain 
             instant financial clarity.

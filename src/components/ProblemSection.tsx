@@ -24,8 +24,8 @@ const ProblemSection = () => {
     <section className="py-12 px-4 bg-white font-nunito">
       <div className="max-w-[1440px] mx-auto text-center">
         {/* Label and Heading */}
-        <p className="text-[20px] font-bold text-black mb-4 font-roboto">The Problem</p>
-        <h2 className="text-[40px] md:text-[56px] font-bold text-black mb-8 leading-[100%] font-nunito">
+        <p className="text-[16px] md:text-[20px] font-bold text-black mb-4 font-roboto">The Problem</p>
+        <h2 className="text-[32px] md:text-[56px] font-bold text-black mb-8 leading-tight md:leading-[100%] font-nunito">
           Your team deserves better than manual data entry
         </h2>
 

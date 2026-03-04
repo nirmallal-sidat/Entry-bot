@@ -71,18 +71,18 @@ const TimeBackSection = () => {
         <h3 className="text-[30px] font-bold text-black font-nunito leading-[100%]">{title}</h3>
         <MoreButton />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[40px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[20px] md:gap-[40px] place-items-center lg:place-items-stretch">
         {cards.map((card, index) => (
-          <div key={index} className="bg-[#FFE500] pt-8 px-8 pb-0 rounded-[20px] flex flex-col w-full max-w-[348px] h-[428.5px] relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
-            <h4 className="text-[20px] font-medium text-black mb-2 leading-[100%] font-roboto">{card.title}</h4>
-            <p className="text-[18px] text-black mb-6 font-roboto font-normal leading-[100%]">{card.description}</p>
-            <div className="mt-auto bg-white rounded-t-2xl w-full h-[250px] relative shadow-lg overflow-hidden translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+          <div key={index} className="bg-[#FFE500] pt-8 px-6 md:px-8 pb-0 rounded-[20px] flex flex-col w-full max-w-md lg:max-w-[348px] h-[400px] md:h-[428.5px] relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+            <h4 className="text-[18px] md:text-[20px] font-medium text-black mb-2 leading-tight font-roboto">{card.title}</h4>
+            <p className="text-[16px] md:text-[18px] text-black mb-6 font-roboto font-normal leading-tight">{card.description}</p>
+            <div className="mt-auto bg-white rounded-t-2xl w-full h-[220px] md:h-[250px] relative shadow-lg overflow-hidden translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                 <div className="relative w-full h-full p-4">
                   <Image 
                     src={card.image} 
                     alt={card.title} 
                     fill 
-                    className="object-contain object-bottom p-4"
+                    className="object-contain object-bottom p-2 md:p-4"
                   />
                 </div>
             </div>
