@@ -12,20 +12,6 @@ const PricingPage = () => {
     setActiveFaqIndex(activeFaqIndex === index ? null : index);
   };
 
-  const pricingFaqs = [
-    {
-      question: "Can I change plans later?",
-      answer: "Yes, you can upgrade or downgrade your plan at any time directly from your dashboard settings."
-    },
-    {
-      question: "What happens after my trial?",
-      answer: "After your 14-day Professional trial, you can either upgrade or you'll be automatically moved to our Starter plan."
-    },
-    {
-      question: "Is my data secure?",
-      answer: "Absolutely. We use bank-grade encryption and are SOC2 compliant to ensure your financial data is always protected."
-    }
-  ];
 
   const plans = [
     {
@@ -137,7 +123,7 @@ const PricingPage = () => {
         </div>
       </section>
 
-      {/* FAQ or Comparison Section */}
+      {/* FAQ Section */}
       <section className="py-24 px-4 bg-white font-nunito border-t border-zinc-100">
         <div className="max-w-[1900px] mx-auto lg:px-20">
           <h2 className="text-[48px] md:text-[64px] font-bold text-black text-center mb-12 tracking-tight leading-[100%]">
@@ -145,16 +131,39 @@ const PricingPage = () => {
           </h2>
           
           <div className="max-w-5xl mx-auto">
-              {pricingFaqs.map((faq, index) => (
+              {[
+                {
+                  question: "Why is Entrybot better than QuickBooks?",
+                  answer: "Entrybot is designed to automate the heavy lifting of accounting using advanced AI. It seamlessly handles categorization, reconciliations, and real-time reporting, allowing you to focus on growing your business while maintaining 100% financial accuracy."
+                },
+                {
+                  question: "Does Entrybot replace my bookkeeper?",
+                  answer: "Entrybot automates 90% of bookkeeping tasks. For many startups, it replaces the need for an external bookkeeper entirely. For larger firms, it acts as a powerful assistant that makes your current bookkeeper 10x more efficient."
+                },
+                {
+                  question: "How does Entrybot keep me tax-ready?",
+                  answer: "We ensure all your transactions are categorized correctly in real-time. By the time tax season rolls around, your books are perfectly organized, reconciliations are done, and you can export everything for your CPA with one click."
+                },
+                {
+                  question: "How does Entrybot help me understand my business better?",
+                  answer: "Entrybot provides a real-time dashboard of your finances. You don't have to wait for the end of the month to know your burn rate, runway, or profitability. We provide interactive insights that help you make better strategic decisions."
+                },
+                {
+                  question: "How does Entrybot keep me fundraise ready?",
+                  answer: "Investors love clean books. Entrybot ensures your financial data is always professional, accurate, and ready for due diligence. We help you maintain bank-grade records from day one."
+                }
+              ].map((faq, index) => (
                 <div
                   key={index}
                   className="border-b border-zinc-100 last:border-0"
                 >
                   <div 
                     onClick={() => toggleFAQ(index)}
-                    className="py-10 flex items-center justify-between group cursor-pointer hover:bg-zinc-50/50 px-6 rounded-2xl transition-all duration-300"
+                    className={`py-6 flex items-center justify-between group cursor-pointer px-6 rounded-2xl transition-all duration-300 ${
+                      activeFaqIndex === index ? "bg-zinc-50" : "hover:bg-zinc-50/50"
+                    }`}
                   >
-                    <h3 className={`text-[20px] md:text-[24px] font-bold text-black transition-all duration-300 leading-tight ${
+                    <h3 className={`text-[18px] md:text-[22px] font-bold text-black transition-all duration-300 leading-tight ${
                       activeFaqIndex === index ? "text-zinc-900" : "text-zinc-800"
                     }`}>
                       {faq.question}
@@ -164,7 +173,7 @@ const PricingPage = () => {
                         ? "rotate-90 text-black translate-x-1" 
                         : "text-zinc-400 group-hover:text-black group-hover:translate-x-2"
                     }`}>
-                      <ChevronRight size={28} strokeWidth={2.5} />
+                      <ChevronRight size={24} strokeWidth={2.5} />
                     </div>
                   </div>
                   

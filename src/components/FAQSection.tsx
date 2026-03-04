@@ -80,9 +80,11 @@ const FAQSection = () => {
             >
               <div 
                 onClick={() => toggleFAQ(index)}
-                className="py-10 flex items-center justify-between group cursor-pointer hover:bg-zinc-50/50 px-6 rounded-2xl transition-all duration-300"
+                className={`py-6 flex items-center justify-between group cursor-pointer px-6 rounded-2xl transition-all duration-300 ${
+                  activeIndex === index ? "bg-zinc-50" : "hover:bg-zinc-50/50"
+                }`}
               >
-                <h3 className={`text-[20px] md:text-[24px] font-bold text-black transition-all duration-300 leading-tight ${
+                <h3 className={`text-[18px] md:text-[22px] font-bold text-black transition-all duration-300 leading-tight ${
                   activeIndex === index ? "text-zinc-900" : "text-zinc-800"
                 }`}>
                   {question}
@@ -92,7 +94,7 @@ const FAQSection = () => {
                     ? "rotate-90 text-black translate-x-1" 
                     : "text-zinc-400 group-hover:text-black group-hover:translate-x-2"
                 }`}>
-                  <ChevronRight size={28} strokeWidth={2.5} />
+                  <ChevronRight size={24} strokeWidth={2.5} />
                 </div>
               </div>
               
