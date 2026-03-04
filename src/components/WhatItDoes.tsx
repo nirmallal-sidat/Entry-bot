@@ -40,10 +40,10 @@ const WhatItDoes = () => {
   return (
     <section className="py-24 px-4 bg-white font-nunito">
       <div className="max-w-[1900px] mx-auto lg:px-20 text-center">
-        <h2 className="text-[32px] md:text-[56px] font-bold text-black mb-6 leading-tight md:leading-[100%] font-nunito">
+        <h2 className="text-[36px] md:text-[48px] xl:text-[55px] font-bold text-black mb-6 leading-[110%] md:leading-[60px] font-nunito">
           What Entrybot does
         </h2>
-        <p className="text-[16px] md:text-[18px] text-black max-w-3xl mx-auto mb-12 md:mb-20 font-normal font-roboto leading-relaxed md:leading-[100%] text-center">
+        <p className="text-[18px] text-black max-w-3xl mx-auto mb-20 font-normal font-roboto leading-[120%] md:leading-[21px] text-center">
           Entrybot uses AI to support startups, SMBs and their accounting firms, by automating the busywork—so humans can focus on accuracy, insight and growth.
         </p>
 
@@ -73,7 +73,7 @@ const WhatItDoes = () => {
         <div className="flex justify-center">
           <Link 
             href="#" 
-            className="inline-flex items-center gap-2 bg-black text-white px-10 py-4 rounded-xl hover:bg-zinc-800 transition-all duration-300 text-[16px] font-medium"
+            className="inline-flex items-center gap-2 bg-black text-white px-10 py-4 rounded-xl hover:bg-zinc-800 transition-all duration-300 text-[18px] font-medium"
           >
             Book a demo
             <ArrowRight size={18} />

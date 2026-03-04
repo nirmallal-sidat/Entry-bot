@@ -35,7 +35,7 @@ const FAQSection = () => {
   return (
     <section id="faq" className="py-24 px-4 bg-white font-nunito">
       <div className="max-w-[1900px] mx-auto lg:px-20">
-        <h2 className="text-[32px] md:text-[64px] font-bold text-black text-center mb-12 tracking-tight leading-tight md:leading-[100%]">
+        <h2 className="text-[36px] md:text-[48px] xl:text-[55px] font-bold text-black text-center mb-12 tracking-tight leading-[110%] md:leading-[60px]">
           FAQs
         </h2>
 

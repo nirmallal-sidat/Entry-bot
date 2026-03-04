@@ -25,8 +25,8 @@ const TakeBackHours = () => {
       </div>
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
-        <h2 className="text-[32px] md:text-[64px] font-bold text-black mb-8 leading-tight md:leading-[100%] font-nunito">
-          Ready to take back<br className="md:block" /> hours every week?
+        <h2 className="text-[48px] md:text-[64px] font-bold text-black mb-8 leading-[100%] font-nunito">
+          Ready to take back<br />hours every week?
         </h2>
         <p className="text-[18px] text-black max-w-xl mx-auto mb-12 font-normal font-roboto leading-[100%]">
           Join the 7,000+ companies and firms using Puzzle to keep books accurate, up to date, and fast to close.

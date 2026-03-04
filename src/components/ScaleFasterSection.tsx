@@ -39,17 +39,17 @@ const ScaleFasterSection = () => {
       <div className="max-w-[1900px] mx-auto lg:px-20">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-12 gap-8">
           <div className="max-w-3xl">
-            <h2 className="text-[32px] md:text-[55px] font-bold text-black mb-6 leading-tight md:leading-[100%] font-nunito">
+            <h2 className="text-[36px] md:text-[48px] xl:text-[55px] font-bold text-black mb-6 leading-[110%] md:leading-[60px] font-nunito">
               How Modern Teams Scale Faster With Entrybot
             </h2>
-            <p className="text-[16px] md:text-[18px] text-black max-w-xl font-normal font-roboto leading-relaxed md:leading-[100%]">
+            <p className="text-[18px] text-black max-w-xl font-normal font-roboto leading-[100%]">
               From AI startups to accounting firms, teams use Entrybot to automate workflows, close faster, and gain real-time financial clarity.
             </p>
           </div>
           
           <Link href="#" className="inline-flex items-center group mb-2">
             <span className="text-[18px] font-medium text-black mr-3">More</span>
-            <div className="relative w-[60px] md:w-[80px] h-[30px] md:h-[40px] group-hover:translate-x-3 transition-transform duration-300">
+            <div className="relative w-[80px] h-[40px] group-hover:translate-x-3 transition-transform duration-300">
               <Image 
                 src="/Arrowdesign.png" 
                 alt="Arrow" 
@@ -61,14 +61,14 @@ const ScaleFasterSection = () => {
         </div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-16">
+        <div className="flex flex-wrap justify-center gap-4 mb-16">
           {tabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 md:px-5 py-2 rounded-full text-[14px] md:text-[16px] font-medium transition-all duration-300 ${
+              className={`px-5 py-2 rounded-full text-[16px] font-medium transition-all duration-300 ${
                 activeTab === tab
-                  ? "bg-black text-white shadow-lg"
+                  ? "bg-black text-white"
                   : "text-black hover:bg-black/5"
               }`}
             >
@@ -78,22 +78,22 @@ const ScaleFasterSection = () => {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-2 place-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           {cards.map((card, index) => (
             <div
               key={index}
-              className={`relative ${card.bgColor} p-6 md:p-8 rounded-[20px] w-full max-w-md lg:max-w-[560px] min-h-[250px] md:h-[280px] flex flex-col justify-between transition-all duration-300 hover:scale-[1.02] border border-black/5`}
+              className={`relative ${card.bgColor} p-8 rounded-[20px] w-full max-w-[560px] h-[280px] flex flex-col justify-between transition-all duration-300`}
             >
               <div className="relative z-10">
-                <h3 className="text-[20px] md:text-[22px] font-bold text-black mb-4 tracking-tight font-nunito leading-tight">
+                <h3 className="text-[20px] font-bold text-black mb-4 tracking-tight font-nunito leading-[110%] md:leading-[23px]">
                   {card.title}
                 </h3>
-                <p className="text-[15px] md:text-[16px] text-black leading-relaxed md:leading-[120%] font-roboto font-normal">
+                <p className="text-[18px] text-black leading-[120%] md:leading-[21px] font-roboto font-normal">
                   {card.description}
                 </p>
               </div>
-              <div className="mt-auto pt-6">
-                <div className="relative h-10 md:h-14 w-32 md:w-full md:max-w-[180px]">
+              <div className="mt-auto">
+                <div className="relative h-14 w-full max-w-[180px]">
                   <Image 
                     src={card.logo === "Cactus" ? "/cactus.png" : card.logo === "REGIMEN" ? "/Regimen.png" : "/Hyperspell.png"} 
                     alt={card.logo}

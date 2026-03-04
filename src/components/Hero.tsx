@@ -26,16 +26,16 @@ const Hero = () => {
       <div className="max-w-[1900px] mx-auto px-4 lg:px-20 w-full relative min-h-[600px] lg:min-h-[760px] flex items-center">
         {/* Text Content */}
         <div className="max-w-4xl z-10 text-center lg:text-left pt-20 lg:pt-0">
-          <h1 className="text-[40px] md:text-[64px] lg:text-[100px] font-bold text-black leading-[110%] md:leading-[100%] mb-6 tracking-tight font-nunito">
+          <h1 className="text-[56px] md:text-[80px] xl:text-[100px] font-bold text-black leading-[110%] md:leading-[136px] mb-6 tracking-tight font-nunito">
                 Transform Documents into Data, Instantly
           </h1>
-          <p className="text-[16px] md:text-[18px] text-black max-w-lg mb-12 leading-relaxed md:leading-[100%] font-normal mx-auto lg:mx-0 font-roboto">
+          <p className="text-[18px] text-black max-w-lg mb-12 leading-[120%] md:leading-[21px] font-normal mx-auto lg:mx-0 font-roboto">
             Entrybot uses intelligent OCR and AI vision to extract, process, and manage data from any document type - invoices, receipts, bank statements, or scanned files.
           </p>
           
           <Link href="#" className="inline-flex items-center group">
             <span className="text-[18px] font-medium text-black mr-3">Start Free Trial</span>
-            <div className="relative w-[60px] md:w-[80px] h-[30px] md:h-[40px] group-hover:translate-x-3 transition-transform duration-300">
+            <div className="relative w-[80px] h-[40px] group-hover:translate-x-3 transition-transform duration-300">
               <Image 
                 src="/Arrowdesign.png" 
                 alt="Arrow" 
@@ -47,13 +47,13 @@ const Hero = () => {
         </div>
 
         {/* Banner Image Container - Now Background & Right Aligned */}
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-full lg:w-[95%] h-full lg:h-[120%] z-0 opacity-20 md:opacity-40 lg:opacity-100 pointer-events-none">
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-full lg:w-[95%] h-full lg:h-[120%] z-0 opacity-40 lg:opacity-100 pointer-events-none">
           <div className="relative w-full h-full">
             <Image 
               src="/Bannerimg.png" 
               alt="Entrybot Banner" 
               fill
-              className="object-right object-contain md:object-right"
+              className="object-right object-contain"
               style={{ transform: 'rotate(0deg)' }}
               priority
             />

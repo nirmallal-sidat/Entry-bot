@@ -24,8 +24,8 @@ const ProblemSection = () => {
     <section className="py-12 px-4 bg-white font-nunito">
       <div className="max-w-[1440px] mx-auto text-center">
         {/* Label and Heading */}
-        <p className="text-[16px] md:text-[20px] font-bold text-black mb-4 font-roboto">The Problem</p>
-        <h2 className="text-[32px] md:text-[56px] font-bold text-black mb-8 leading-tight md:leading-[100%] font-nunito">
+        <p className="text-[20px] font-bold text-black mb-4 font-roboto">The Problem</p>
+        <h2 className="text-[36px] md:text-[48px] xl:text-[55px] font-bold text-black mb-8 leading-[110%] md:leading-[60px] font-nunito">
           Your team deserves better than manual data entry
         </h2>
 
@@ -47,7 +47,7 @@ const ProblemSection = () => {
         <div className="flex justify-center">
           <Link 
             href="#" 
-            className="inline-flex items-center gap-2 bg-[#0a0a0a] text-white px-8 py-4 rounded-xl hover:bg-zinc-800 transition-colors text-[16px] font-medium"
+            className="inline-flex items-center gap-2 bg-[#0a0a0a] text-white px-8 py-4 rounded-xl hover:bg-zinc-800 transition-colors text-[18px] font-medium"
           >
             Discover Our Solution
             <ArrowRight size={18} />

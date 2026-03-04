@@ -64,11 +64,11 @@ const PricingPage = () => {
     <>
       {/* Hero Section */}
       <section className="mt-20 bg-[#F4F4F4] font-nunito">
-        <div className="py-20 md:py-24 px-6 max-w-4xl mx-auto text-center">
-          <h1 className="text-[36px] md:text-[64px] font-bold text-black mb-8 leading-tight">
+        <div className="py-24 px-4 max-w-4xl mx-auto text-center">
+          <h1 className="text-[48px] md:text-[64px] font-bold text-black mb-8 leading-tight">
             Simple, Transparent Pricing
           </h1>
-          <p className="text-[16px] md:text-[18px] text-black leading-relaxed max-w-2xl mx-auto font-medium">
+          <p className="text-[18px] text-black leading-relaxed max-w-2xl mx-auto font-medium">
             Choose the plan that fits your business stage. No hidden fees, 
             no long-term contracts. Scale as you grow.
           </p>
@@ -76,29 +76,29 @@ const PricingPage = () => {
       </section>
 
       {/* Pricing Cards Section */}
-      <section className="py-20 md:py-24 px-4 bg-white font-nunito">
+      <section className="py-24 px-4 bg-white font-nunito">
         <div className="max-w-[1900px] mx-auto lg:px-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {plans.map((plan, index) => (
               <div 
                 key={index} 
                 className={`
-                  ${plan.bgColor} p-8 md:p-10 rounded-3xl border-2 border-black transition-all
-                  ${plan.highlight ? 'shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] lg:scale-105 z-10' : 'shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]'}
+                  ${plan.bgColor} p-10 rounded-3xl border-2 border-black transition-all
+                  ${plan.highlight ? 'shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] scale-105 z-10' : 'shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]'}
                 `}
               >
                 <div className="mb-8">
-                  <h3 className="text-[22px] md:text-[24px] font-bold text-black mb-2">{plan.name}</h3>
-                  <p className="text-[14px] md:text-[15px] text-zinc-600 font-medium mb-6">{plan.description}</p>
+                  <h3 className="text-[24px] font-bold text-black mb-2">{plan.name}</h3>
+                  <p className="text-[15px] text-zinc-600 font-medium mb-6">{plan.description}</p>
                   <div className="flex items-baseline gap-1">
-                    <span className="text-[40px] md:text-[48px] font-bold text-black">{plan.price}</span>
-                    {plan.price !== "Custom" && <span className="text-[16px] md:text-[18px] text-zinc-600 font-bold">/mo</span>}
+                    <span className="text-[48px] font-bold text-black">{plan.price}</span>
+                    {plan.price !== "Custom" && <span className="text-[18px] text-zinc-600 font-bold">/mo</span>}
                   </div>
                 </div>
 
                 <ul className="space-y-4 mb-10">
                   {plan.features.map((feature, fIndex) => (
-                    <li key={fIndex} className="flex items-start gap-3 text-[15px] md:text-[16px] text-black font-medium">
+                    <li key={fIndex} className="flex items-start gap-3 text-[16px] text-black font-medium">
                       <div className="shrink-0 mt-1">
                         <Check size={18} className="text-black" strokeWidth={3} />
                       </div>
@@ -124,9 +124,9 @@ const PricingPage = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 md:py-24 px-4 bg-white font-nunito border-t border-zinc-100">
+      <section className="py-24 px-4 bg-white font-nunito border-t border-zinc-100">
         <div className="max-w-[1900px] mx-auto lg:px-20">
-          <h2 className="text-[32px] md:text-[64px] font-bold text-black text-center mb-12 tracking-tight leading-tight md:leading-[100%]">
+          <h2 className="text-[48px] md:text-[64px] font-bold text-black text-center mb-12 tracking-tight leading-[100%]">
             FAQs
           </h2>
           
